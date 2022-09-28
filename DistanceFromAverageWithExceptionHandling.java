@@ -1,5 +1,16 @@
 import java.util.Scanner;
-public class DistanceFromAverageWithExceptionHandling 
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+
+/**
+ *
+ * @author MENAGA
+ *
+ */
+public class DistanceFromAverageWithExceptionHandling
 {
      public static void main (String[] args)
    {
@@ -21,7 +32,7 @@ public class DistanceFromAverageWithExceptionHandling
       catch(Exception e)
       {
             System.out.println("Invalid value for array size");
-            
+           
             canCreateArray = false;
             input.nextLine();
       }
@@ -75,7 +86,8 @@ public class DistanceFromAverageWithExceptionHandling
                System.out.println(numbers[y] + " is " +
                   (average - numbers[y]) + " away from the average");
          }          
+                 
       }
    }
-    
+   
 }
