@@ -20,13 +20,12 @@ public class DistanceFromAverageWithExceptionHandling
       double entry = 0;
       double total = 0;
       double average = 0;
-      final int QUIT = 999;
       boolean canCreateArray = true;
       boolean K = false;
       int x = 0, y;
       try
       {
-         System.out.print("Please enter a value for the array size >> ");
+         System.out.print("enter a value for the array size : ");
          enteredSize = input.nextInt();
       }
       catch(Exception e)
@@ -43,8 +42,7 @@ public class DistanceFromAverageWithExceptionHandling
          {
              try
              {
-                 System.out.print("Enter a numeric value or " +
-                    QUIT + " to quit >> ");
+                 System.out.print("Enter a value : ");
                  entry = input.nextDouble();
                  K = true;
              }
@@ -54,7 +52,7 @@ public class DistanceFromAverageWithExceptionHandling
                 input.nextLine();
              }
          }
-         while(entry != QUIT && x < numbers.length)
+         while( x < numbers.length)
          {
             numbers[x] = entry;
             ++x;
@@ -62,8 +60,7 @@ public class DistanceFromAverageWithExceptionHandling
             {
                try
                {
-                  System.out.print("Enter next numeric value or " +
-                     QUIT + " to quit >> ");
+                  System.out.print("Enter a value : ");
                   entry = input.nextDouble();
                }
                catch(Exception e)
@@ -86,7 +83,6 @@ public class DistanceFromAverageWithExceptionHandling
                System.out.println(numbers[y] + " is " +
                   (average - numbers[y]) + " away from the average");
          }          
-                 
       }
    }
    
